@@ -1,0 +1,40 @@
+{
+  "TableName": "jbd-leads",
+  "BillingMode": "PAY_PER_REQUEST",
+
+  "KeySchema": [
+    { "AttributeName": "leadId", "KeyType": "HASH" }
+  ],
+
+  "AttributeDefinitions": [
+    { "AttributeName": "leadId", "AttributeType": "S" },
+    { "AttributeName": "createdAt", "AttributeType": "S" },
+    { "AttributeName": "status", "AttributeType": "S" }
+  ],
+
+  "GlobalSecondaryIndexes": [
+    {
+      "IndexName": "status-createdAt-index",
+      "KeySchema": [
+        { "AttributeName": "status", "KeyType": "HASH" },
+        { "AttributeName": "createdAt", "KeyType": "RANGE" }
+      ],
+      "Projection": { "ProjectionType": "ALL" }
+    }
+  ],
+
+  "_item_shape": {
+    "leadId":           "string (UUID) — partition key",
+    "createdAt":        "string (ISO 8601) — when submitted",
+    "firstName":        "string",
+    "lastName":         "string",
+    "phone":            "string",
+    "email":            "string",
+    "service":          "string",
+    "consultationDate": "string (YYYY-MM-DD)",
+    "preferredTime":    "string",
+    "description":      "string",
+    "status":           "string — new | contacted | in-progress | completed",
+    "internalNotes":    "string — filled in by the app"
+  }
+}

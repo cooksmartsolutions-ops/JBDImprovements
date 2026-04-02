@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Projects — JBD Improvements LLC | DFW Texas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .gallery-item { transition: opacity 0.3s ease, transform 0.3s ease; }
+    .gallery-item.hidden { display: none; }
+  </style>
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-bg-img" style="background-image:url('Pictures/CAD8D03E-E45F-45B4-AB09-83AE3EA27FD7.webp');"></div>
+  <div class="page-hero-content">
+    <div class="page-hero-breadcrumb">
+      <a href="index.html">Home</a> <span>/</span> Projects
+    </div>
+    <h1 class="page-hero-h1">Our Work</h1>
+    <p class="page-hero-sub">Browse our portfolio of completed projects across the Dallas–Fort Worth area — from outdoor kitchens to full patio renovations.</p>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<section class="section section-alt">
+  <div class="container">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:32px;" class="reveal">
+      <div>
+        <span class="teal-rule"></span>
+        <span class="section-label">Portfolio</span>
+        <h2 class="section-title">Project Gallery</h2>
+      </div>
+      <p style="font-size:14px;color:var(--muted);">Have a project in mind? <a href="contact.html" style="color:var(--teal);font-weight:600;">Get a free estimate →</a></p>
+    </div>
+
+    <!-- Filters -->
+    <div class="gallery-filters reveal">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="covers">Covers &amp; Pergolas</button>
+      <button class="filter-btn" data-filter="outdoor">Outdoor Living</button>
+      <button class="filter-btn" data-filter="concrete">Concrete</button>
+      <button class="filter-btn" data-filter="remodel">Remodeling</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid" id="galleryGrid">
+
+      <div class="gallery-item reveal" data-cat="covers">
+        <img src="Pictures/1044-Covers-Pergolas-1024x682-1.jpg" alt="White patio cover" />
+        <div class="gallery-item-overlay"><span class="gallery-item-label">Patio Covers</span></div>
+      </div>
+
+      <div class="gallery-item reveal" data-cat="outdoor" style="transition-delay:0.05s">
+        <img src="Pictures/CAD8D03E-E45F-45B4-AB09-83AE3EA27FD7.webp" alt="Custom wood pavilion" />
+        <div class="gallery-item-overlay"><span class="gallery-item-label">Custom Pavilion</span></div>
+      </div>
+
+      <div class="gallery-item reveal" data-cat="covers" style="transition-delay:0.1s">
+        <img src="Pictures/bespoke-only-amagansett-088-64db.jpg" alt="Modern covered pergola" />
+        <div class="gallery-item-overlay"><span class="gallery-item-label">Covered Pergola</span></div>
+      </div>
+
+      <div class="gallery-item reveal" data-cat="outdoor" style="transition-delay:0.05s">
+        <img src="Pictures/Outdoorkitchen.jpg" alt="Outdoor kitchen and patio" />
+        <div class="gallery-item-overlay"><span class="gallery-item-label">Outdoor Kitchen</span></div>
+      </div>
+
+      <div class="gallery-item reveal" data-cat="outdoor" style="transition-delay:0.1s">
+        <img src="Pictures/Expo_BristolSeries_2023_02.jpg" alt="Stone outdoor fireplace" />
+        <div class="gallery-item-overlay"><span class="gallery-item-label">Outdoor Fireplace</span></div>
+      </div>
+
+      <div class="gallery-item reveal" data-cat="outdoor" style="transition-delay:0.15s">
+        <img src="Pictures/DA213780-3109-49C4-B8BB-B5C511ECF46D.webp" alt="Covered patio with brick" />
+        <div class="gallery-item-overlay"><span class="gallery-item-label">Covered Patio</span></div>
+      </div>
+
+      <div class="gallery-item reveal" data-cat="concrete" style="transition-delay:0.05s">
+        <img src="Pictures/8-Steps-to-Applying-Stamp-Concre.jpg" alt="Stamped concrete walkway" />
+        <div class="gallery-item-overlay"><span class="gallery-item-label">Stamped Concrete</span></div>
+      </div>
+
+      <div class="gallery-item reveal" data-cat="concrete" style="transition-delay:0.1s">
+        <img src="Pictures/How20does20stamped20concrete20ho.jpg" alt="Stamped concrete patio" />
+        <div class="gallery-item-overlay"><span class="gallery-item-label">Stamped Concrete</span></div>
+      </div>
+
+      <div class="gallery-item reveal" data-cat="remodel" style="transition-delay:0.15s">
+        <img src="Pictures/03ED3F51-3984-4713-BF89-9EC082B15147.webp" alt="Remodeled entryway" />
+        <div class="gallery-item-overlay"><span class="gallery-item-label">Remodeling</span></div>
+      </div>
+
+      <div class="gallery-item reveal" data-cat="covers" style="transition-delay:0.05s">
+        <img src="Pictures/1089-Covers-Acrilyte-1024x683-1.jpg" alt="Acrilyte cover attached to home" />
+        <div class="gallery-item-overlay"><span class="gallery-item-label">Patio Cover</span></div>
+      </div>
+
+      <div class="gallery-item reveal" data-cat="covers" style="transition-delay:0.1s">
+        <img src="Pictures/1071-Covers-Wood-Framed-1024x683-1.jpg" alt="Wood framed patio cover" />
+        <div class="gallery-item-overlay"><span class="gallery-item-label">Wood-Framed Cover</span></div>
+      </div>
+
+      <div class="gallery-item reveal" data-cat="covers" style="transition-delay:0.15s">
+        <img src="Pictures/1094-Covers-Acrilyte-scaled-1.jpg" alt="Acrilyte patio cover" />
+        <div class="gallery-item-overlay"><span class="gallery-item-label">Patio Cover</span></div>
+      </div>
+
+      <div class="gallery-item reveal" data-cat="covers" style="transition-delay:0.2s">
+        <img src="Pictures/1087-Covers-Acrilyte-scaled.jpg" alt="Pergola with acrilyte" />
+        <div class="gallery-item-overlay"><span class="gallery-item-label">Covered Pergola</span></div>
+      </div>
+
+      <div class="gallery-item reveal" data-cat="covers" style="transition-delay:0.25s">
+        <img src="Pictures/1102-Covers-Acrylite-1024x768.jpg" alt="Large acrylite cover" />
+        <div class="gallery-item-overlay"><span class="gallery-item-label">Acrylite Cover</span></div>
+      </div>
+
+      <div class="gallery-item reveal" data-cat="outdoor" style="transition-delay:0.3s">
+        <img src="Pictures/03ED3F51-3984-4713-BF89-9EC082B15147.webp" alt="Covered patio with outdoor seating" />
+        <div class="gallery-item-overlay"><span class="gallery-item-label">Covered Patio</span></div>
+      </div>
+
+    </div>
+
+    <!-- More photos note -->
+    <div style="margin-top:48px;text-align:center;padding:40px;background:var(--surface);border:1px solid var(--border);border-radius:14px;" class="reveal">
+      <p style="font-size:16px;font-weight:500;color:var(--dark);margin-bottom:8px;">Want to see more of our work?</p>
+      <p style="font-size:14px;color:var(--muted);margin-bottom:20px;">Follow us on Facebook and Instagram for the latest project photos from the DFW area.</p>
+      <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;">
+        <a href="https://www.facebook.com/profile.php?id=100068583097924" target="_blank" rel="noopener" class="btn-teal" style="gap:8px;">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          View on Facebook
+        </a>
+        <a href="https://www.instagram.com/jbd_improvements_/" target="_blank" rel="noopener" class="btn-outline" style="border-color:var(--border);color:var(--text);">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          View on Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner reveal">
+  <div class="cta-banner-inner">
+    <div>
+      <h2 class="section-title section-title-light" style="font-size:clamp(32px,4vw,54px);">Like What You See?</h2>
+      <p class="section-sub section-sub-light" style="margin-top:8px;">Let's build something great together. Get a free estimate today.</p>
+    </div>
+    <a href="contact.html" class="btn-amber lg">Get a Free Estimate</a>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="components.js"></script>
+<script src="animations.js"></script>
+<script src="extras.js"></script>
+<script>
+  renderNav('projects');
+  renderFooter();
+  initReveal();
+  initProgressBar();
+  initPageAnimations();
+  initExtras();
+
+  // Gallery filter
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const items = document.querySelectorAll('.gallery-item');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      items.forEach(item => {
+        if (filter === 'all' || item.dataset.cat === filter) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>
