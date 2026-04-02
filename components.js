@@ -111,7 +111,7 @@ function renderFooter() {
             <h4>Contact</h4>
             <div class="footer-links">
               <a href="tel:+18173576614" class="footer-link">(817) 357-6614</a>
-              <a href="mailto:123jbd@msn.com" class="footer-link">123jbd@msn.com</a>
+              <a href="mailto:JBD@jbdimprovements.com" class="footer-link">JBD@jbdimprovements.com</a>
               <span class="footer-link">Dallas–Fort Worth, TX</span>
             </div>
           </div>
