@@ -189,7 +189,7 @@ function initTestimonials() {
 
   const style = document.createElement('style');
   style.textContent = `
-    .testimonials-section { padding:88px 0;background:var(--surface); }
+    .testimonials-section { padding:56px 0 72px;background:var(--surface); }
     .testimonial-track { display:flex;transition:transform 0.5s cubic-bezier(0.25,1,0.5,1); }
     .testimonial-card {
       min-width:100%;padding:0 16px;box-sizing:border-box;
