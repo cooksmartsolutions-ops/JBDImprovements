@@ -91,7 +91,8 @@ function renderFooter() {
             <h4>Services</h4>
             <div class="footer-links">
               <a href="services.html" class="footer-link">Patio Covers</a>
-              <a href="services.html" class="footer-link">Covered Pergolas</a>
+              <a href="services.html" class="footer-link">Pergolas</a>
+              <a href="services.html" class="footer-link">Audio, Video &amp; Lighting</a>
               <a href="services.html" class="footer-link">Outdoor Kitchens</a>
               <a href="services.html" class="footer-link">Outdoor Fireplaces</a>
               <a href="services.html" class="footer-link">Stamped Concrete</a>
@@ -118,7 +119,7 @@ function renderFooter() {
         </div>
         <div class="footer-bar">
           <span>© 2026 JBD Improvements LLC. All rights reserved.</span>
-          <span>DFW's Outdoor Living Specialists</span>
+          <span>Site by <a href="https://CookSmartSolutions.com" target="_blank" rel="noopener" style="color:var(--teal);text-decoration:none;">Cook Smart Solutions</a></span>
         </div>
       </div>
     </footer>`;

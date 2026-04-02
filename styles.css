@@ -63,6 +63,7 @@ h1, h2, h3, h4, h5 {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   background: var(--surface);
   box-shadow: 0 1px 0 var(--border), 0 2px 12px rgba(0,0,0,0.05);
+  overflow: visible;
 }
 .nav-inner {
   max-width: var(--max-w); margin: 0 auto; padding: 0 40px;
@@ -114,7 +115,7 @@ h1, h2, h3, h4, h5 {
   transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   background: var(--surface); border-top: 1px solid var(--border);
 }
-.mobile-menu.open { max-height: 500px; }
+.mobile-menu.open { max-height: 600px; }
 .mobile-menu-inner { padding: 16px 40px 24px; display: flex; flex-direction: column; gap: 16px; }
 .mobile-link {
   font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
