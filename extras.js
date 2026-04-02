@@ -452,7 +452,7 @@ function initServiceAreaMap() {
         </div>
         <div class="map-wrap reveal">
           <iframe
-            src="https://www.google.com/maps/embed/v1/view?key=AIzaSyBE5ZV6rtUes4jXyKjObwo8WrOA5uEADYM&center=32.7767,-97.0641&zoom=9"
+            src="https://www.google.com/maps/embed/v1/view?key=AIzaSyCLOfqGH0qCNtzLq4JSsYDf1zHuQdURwKM&center=32.7767,-97.0641&zoom=9"
             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
             title="JBD Improvements service area — DFW Texas">
           </iframe>
