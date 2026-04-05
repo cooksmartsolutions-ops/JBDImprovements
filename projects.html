@@ -14,10 +14,6 @@
   <title>Our Projects — JBD Improvements LLC | DFW Texas</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    .gallery-item { transition: opacity 0.3s ease, transform 0.3s ease; }
-    .gallery-item.hidden { display: none; }
-  </style>
 </head>
 <body>
 
@@ -25,7 +21,7 @@
 
 <!-- PAGE HERO -->
 <div class="page-hero">
-  <div class="page-hero-bg-img" style="background-image:url('Pictures/CAD8D03E-E45F-45B4-AB09-83AE3EA27FD7.webp');"></div>
+  <div class="page-hero-bg-img" style="background-image:url('Pictures/Facebook/JBD_Photos/jbd_015.jpg');"></div>
   <div class="page-hero-content">
     <div class="page-hero-breadcrumb">
       <a href="index.html">Home</a> <span>/</span> Projects
@@ -35,109 +31,286 @@
   </div>
 </div>
 
-<!-- GALLERY -->
+<!-- FEATURED PROJECTS -->
 <section class="section section-alt">
   <div class="container">
-    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:32px;" class="reveal">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:48px;" class="reveal">
       <div>
         <span class="teal-rule"></span>
         <span class="section-label">Portfolio</span>
-        <h2 class="section-title">Project Gallery</h2>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-sub">Explore our completed projects — click any project to see the full photo gallery.</p>
       </div>
       <p style="font-size:14px;color:var(--muted);">Have a project in mind? <a href="contact.html" style="color:var(--teal);font-weight:600;">Get a free estimate →</a></p>
     </div>
 
-    <!-- Filters -->
-    <div class="gallery-filters reveal">
-      <button class="filter-btn active" data-filter="all">All Projects</button>
-      <button class="filter-btn" data-filter="covers">Covers &amp; Pergolas</button>
-      <button class="filter-btn" data-filter="outdoor">Outdoor Living</button>
-      <button class="filter-btn" data-filter="concrete">Concrete</button>
-      <button class="filter-btn" data-filter="remodel">Remodeling</button>
-    </div>
+    <!-- Project Cards — ordered by photo count -->
+    <div class="project-cards">
 
-    <!-- Gallery Grid -->
-    <div class="gallery-grid" id="galleryGrid">
+      <!-- 1. Outdoor Kitchen & Patio — 15 Photos -->
+      <a href="project-outdoor-kitchen.html" class="project-card reveal">
+        <div class="project-card-img">
+          <img src="Pictures/Facebook/JBD_Photos/jbd_025.jpg" alt="Outdoor kitchen with grill, string lights, and stamped concrete" />
+          <div class="project-card-img-overlay"></div>
+          <div class="project-card-count">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            15 Photos
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-tags">
+            <span class="project-tag">Outdoor Kitchen</span>
+            <span class="project-tag">Pergola</span>
+            <span class="project-tag">Stamped Concrete</span>
+          </div>
+          <h3 class="project-card-title">Complete Outdoor Kitchen &amp; Patio</h3>
+          <p class="project-card-desc">Full backyard transformation featuring a pergola with stamped concrete, custom outdoor kitchen with grill and beverage fridge, lounge area with fire pit, and string lights.</p>
+          <span class="project-card-link">View Project →</span>
+        </div>
+      </a>
 
-      <div class="gallery-item reveal" data-cat="covers">
-        <img src="Pictures/1044-Covers-Pergolas-1024x682-1.jpg" alt="White patio cover" />
-        <div class="gallery-item-overlay"><span class="gallery-item-label">Patio Covers</span></div>
-      </div>
+      <!-- 2. Poolside Pavilion — 11 Photos -->
+      <a href="project-poolside-pavilion.html" class="project-card reveal" style="transition-delay:0.06s">
+        <div class="project-card-img">
+          <img src="Pictures/Facebook/JBD_Photos/jbd_066.jpg" alt="Poolside pavilion with stained ceiling, TV, and bar" />
+          <div class="project-card-img-overlay"></div>
+          <div class="project-card-count">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            11 Photos
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-tags">
+            <span class="project-tag">Patio Cover</span>
+            <span class="project-tag">Bar</span>
+            <span class="project-tag">Outdoor Living</span>
+          </div>
+          <h3 class="project-card-title">Poolside Pavilion &amp; Covered Patio</h3>
+          <p class="project-card-desc">Full poolside transformation with stained cedar gable pavilion, tongue-and-groove ceiling, mounted TV, custom bar area, and pool access — from bare concrete to entertainment hub.</p>
+          <span class="project-card-link">View Project →</span>
+        </div>
+      </a>
 
-      <div class="gallery-item reveal" data-cat="outdoor" style="transition-delay:0.05s">
-        <img src="Pictures/CAD8D03E-E45F-45B4-AB09-83AE3EA27FD7.webp" alt="Custom wood pavilion" />
-        <div class="gallery-item-overlay"><span class="gallery-item-label">Custom Pavilion</span></div>
-      </div>
+      <!-- 3. Pergola with Polycarbonate Panels — 10 Photos -->
+      <a href="project-pergola-polycarbonate.html" class="project-card reveal" style="transition-delay:0.08s">
+        <div class="project-card-img">
+          <img src="Pictures/Facebook/JBD_Photos/jbd_078.jpg" alt="Stained cedar pergola with polycarbonate roof panels" />
+          <div class="project-card-img-overlay"></div>
+          <div class="project-card-count">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            10 Photos
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-tags">
+            <span class="project-tag">Pergola</span>
+            <span class="project-tag">Polycarbonate</span>
+            <span class="project-tag">Solar Panels</span>
+          </div>
+          <h3 class="project-card-title">Pergola with Polycarbonate Roof Panels</h3>
+          <p class="project-card-desc">Stained cedar pergola with translucent polycarbonate panels for filtered light and rain protection, plus integrated rooftop solar panels overlooking the pool and spa.</p>
+          <span class="project-card-link">View Project →</span>
+        </div>
+      </a>
 
-      <div class="gallery-item reveal" data-cat="covers" style="transition-delay:0.1s">
-        <img src="Pictures/bespoke-only-amagansett-088-64db.jpg" alt="Modern covered pergola" />
-        <div class="gallery-item-overlay"><span class="gallery-item-label">Pergola</span></div>
-      </div>
+      <!-- 4. White Brick Gable Patio Cover — 10 Photos -->
+      <a href="project-white-brick-patio.html" class="project-card reveal" style="transition-delay:0.1s">
+        <div class="project-card-img">
+          <img src="Pictures/Facebook/JBD_Photos/jbd_091.jpg" alt="Finished stained gable patio cover on white brick home" />
+          <div class="project-card-img-overlay"></div>
+          <div class="project-card-count">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            10 Photos
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-tags">
+            <span class="project-tag">Patio Cover</span>
+            <span class="project-tag">Gable Roof</span>
+            <span class="project-tag">Cedar Trusses</span>
+          </div>
+          <h3 class="project-card-title">White Brick Gable Patio Cover</h3>
+          <p class="project-card-desc">Large gable-roof patio cover on white painted brick home with heavy cedar posts, king-post trusses, and tongue-and-groove ceiling — from framing through staining.</p>
+          <span class="project-card-link">View Project →</span>
+        </div>
+      </a>
 
-      <div class="gallery-item reveal" data-cat="outdoor" style="transition-delay:0.05s">
-        <img src="Pictures/Outdoorkitchen.jpg" alt="Outdoor kitchen and patio" />
-        <div class="gallery-item-overlay"><span class="gallery-item-label">Outdoor Kitchen</span></div>
-      </div>
+      <!-- 5. Board-and-Batten Home — 10 Photos -->
+      <a href="project-board-batten-home.html" class="project-card reveal" style="transition-delay:0.12s">
+        <div class="project-card-img">
+          <img src="Pictures/Facebook/JBD_Photos/jbd_106.jpg" alt="Finished stained gable patio cover on board-and-batten home" />
+          <div class="project-card-img-overlay"></div>
+          <div class="project-card-count">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            10 Photos
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-tags">
+            <span class="project-tag">Patio Cover</span>
+            <span class="project-tag">Front Entry</span>
+            <span class="project-tag">Cedar Accents</span>
+          </div>
+          <h3 class="project-card-title">Board-and-Batten Home — Patio Cover &amp; Entry</h3>
+          <p class="project-card-desc">Comprehensive exterior upgrade with stained cedar gable patio cover in back and matching cedar accent posts and decorative trusses on the front entry.</p>
+          <span class="project-card-link">View Project →</span>
+        </div>
+      </a>
 
-      <div class="gallery-item reveal" data-cat="outdoor" style="transition-delay:0.1s">
-        <img src="Pictures/Expo_BristolSeries_2023_02.jpg" alt="Stone outdoor fireplace" />
-        <div class="gallery-item-overlay"><span class="gallery-item-label">Outdoor Fireplace</span></div>
-      </div>
+      <!-- 6. Timber-Frame Carport — 9 Photos -->
+      <a href="project-carport.html" class="project-card reveal" style="transition-delay:0.14s">
+        <div class="project-card-img">
+          <img src="Pictures/Facebook/JBD_Photos/jbd_015.jpg" alt="Custom timber-frame carport at night with warm lighting" />
+          <div class="project-card-img-overlay"></div>
+          <div class="project-card-count">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            9 Photos
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-tags">
+            <span class="project-tag">Carport</span>
+            <span class="project-tag">Timber Frame</span>
+          </div>
+          <h3 class="project-card-title">Timber-Frame Carport &amp; Porte-Coch&egrave;re</h3>
+          <p class="project-card-desc">Large cedar timber-frame carport with gable roof, decorative king-post trusses, ceiling fan, lantern sconce lighting, and attached covered patio.</p>
+          <span class="project-card-link">View Project →</span>
+        </div>
+      </a>
 
-      <div class="gallery-item reveal" data-cat="outdoor" style="transition-delay:0.15s">
-        <img src="Pictures/DA213780-3109-49C4-B8BB-B5C511ECF46D.webp" alt="Covered patio with brick" />
-        <div class="gallery-item-overlay"><span class="gallery-item-label">Covered Patio</span></div>
-      </div>
+      <!-- 7. Rural Carport Build — 8 Photos -->
+      <a href="project-rural-carport.html" class="project-card reveal" style="transition-delay:0.16s">
+        <div class="project-card-img">
+          <img src="Pictures/Facebook/JBD_Photos/jbd_044.jpg" alt="Completed rural timber-frame carport" />
+          <div class="project-card-img-overlay"></div>
+          <div class="project-card-count">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            8 Photos
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-tags">
+            <span class="project-tag">Carport</span>
+            <span class="project-tag">Timber Frame</span>
+            <span class="project-tag">New Construction</span>
+          </div>
+          <h3 class="project-card-title">Rural Timber-Frame Carport Build</h3>
+          <p class="project-card-desc">Ground-up timber-frame carport on a rural property — from concrete slab and framing through to finished stained structure with king-post trusses and tongue-and-groove ceiling.</p>
+          <span class="project-card-link">View Project →</span>
+        </div>
+      </a>
 
-      <div class="gallery-item reveal" data-cat="concrete" style="transition-delay:0.05s">
-        <img src="Pictures/8-Steps-to-Applying-Stamp-Concre.jpg" alt="Stamped concrete walkway" />
-        <div class="gallery-item-overlay"><span class="gallery-item-label">Stamped Concrete</span></div>
-      </div>
+      <!-- 8. Gable Patio Cover — 8 Photos -->
+      <a href="project-patio-cover.html" class="project-card reveal" style="transition-delay:0.18s">
+        <div class="project-card-img">
+          <img src="Pictures/Facebook/JBD_Photos/jbd_061.jpg" alt="Finished gable patio cover with stained cedar and privacy wall" />
+          <div class="project-card-img-overlay"></div>
+          <div class="project-card-count">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            8 Photos
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-tags">
+            <span class="project-tag">Patio Cover</span>
+            <span class="project-tag">Concrete</span>
+            <span class="project-tag">Privacy Wall</span>
+          </div>
+          <h3 class="project-card-title">Gable Patio Cover with Privacy Wall</h3>
+          <p class="project-card-desc">Complete backyard patio transformation — from a small existing porch to a full gable-roof patio cover with decorative trusses, ceiling fan, and horizontal cedar slat privacy wall.</p>
+          <span class="project-card-link">View Project →</span>
+        </div>
+      </a>
 
-      <div class="gallery-item reveal" data-cat="concrete" style="transition-delay:0.1s">
-        <img src="Pictures/How20does20stamped20concrete20ho.jpg" alt="Stamped concrete patio" />
-        <div class="gallery-item-overlay"><span class="gallery-item-label">Stamped Concrete</span></div>
-      </div>
+      <!-- 9. Suburban Gable Cover & Pergola — 6 Photos -->
+      <a href="project-suburban-gable-pergola.html" class="project-card reveal" style="transition-delay:0.2s">
+        <div class="project-card-img">
+          <img src="Pictures/Facebook/JBD_Photos/jbd_107.jpg" alt="Gable patio cover with pergola extension under construction" />
+          <div class="project-card-img-overlay"></div>
+          <div class="project-card-count">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            6 Photos
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-tags">
+            <span class="project-tag">Patio Cover</span>
+            <span class="project-tag">Pergola</span>
+            <span class="project-tag">Cedar</span>
+          </div>
+          <h3 class="project-card-title">Suburban Gable Cover &amp; Pergola Build</h3>
+          <p class="project-card-desc">Stained cedar gable patio cover with connected pergola extension on a two-story suburban home, featuring decorative king-post trusses and heavy cedar posts.</p>
+          <span class="project-card-link">View Project →</span>
+        </div>
+      </a>
 
-      <div class="gallery-item reveal" data-cat="remodel" style="transition-delay:0.15s">
-        <img src="Pictures/03ED3F51-3984-4713-BF89-9EC082B15147.webp" alt="Remodeled entryway" />
-        <div class="gallery-item-overlay"><span class="gallery-item-label">Remodeling</span></div>
-      </div>
+      <!-- 10. Basketball Court — 4 Photos -->
+      <a href="project-basketball-court.html" class="project-card reveal" style="transition-delay:0.22s">
+        <div class="project-card-img">
+          <img src="Pictures/Facebook/JBD_Photos/jbd_058.jpg" alt="Finished concrete basketball court with hoop" />
+          <div class="project-card-img-overlay"></div>
+          <div class="project-card-count">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            4 Photos
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-tags">
+            <span class="project-tag">Concrete</span>
+            <span class="project-tag">Flatwork</span>
+          </div>
+          <h3 class="project-card-title">Backyard Basketball Court Slab</h3>
+          <p class="project-card-desc">Custom concrete slab poured for a backyard basketball court with in-ground hoop installation — from bare grass to a level, finished playing surface.</p>
+          <span class="project-card-link">View Project →</span>
+        </div>
+      </a>
 
-      <div class="gallery-item reveal" data-cat="covers" style="transition-delay:0.05s">
-        <img src="Pictures/1089-Covers-Acrilyte-1024x683-1.jpg" alt="Acrilyte cover attached to home" />
-        <div class="gallery-item-overlay"><span class="gallery-item-label">Patio Cover</span></div>
-      </div>
+      <!-- 11. Rural Pavilion — 3 Photos -->
+      <a href="project-rural-pavilion.html" class="project-card reveal" style="transition-delay:0.24s">
+        <div class="project-card-img">
+          <img src="Pictures/Facebook/JBD_Photos/jbd_095.jpg" alt="Finished stained timber-frame pavilion" />
+          <div class="project-card-img-overlay"></div>
+          <div class="project-card-count">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            3 Photos
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-tags">
+            <span class="project-tag">Pavilion</span>
+            <span class="project-tag">Timber Frame</span>
+          </div>
+          <h3 class="project-card-title">Rural Pavilion Build</h3>
+          <p class="project-card-desc">Large timber-frame pavilion on a rural property with stained cedar, king-post trusses, tongue-and-groove ceiling, and concrete slab.</p>
+          <span class="project-card-link">View Project →</span>
+        </div>
+      </a>
 
-      <div class="gallery-item reveal" data-cat="covers" style="transition-delay:0.1s">
-        <img src="Pictures/1071-Covers-Wood-Framed-1024x683-1.jpg" alt="Wood framed patio cover" />
-        <div class="gallery-item-overlay"><span class="gallery-item-label">Wood-Framed Cover</span></div>
-      </div>
-
-      <div class="gallery-item reveal" data-cat="covers" style="transition-delay:0.15s">
-        <img src="Pictures/1094-Covers-Acrilyte-scaled-1.jpg" alt="Acrilyte patio cover" />
-        <div class="gallery-item-overlay"><span class="gallery-item-label">Patio Cover</span></div>
-      </div>
-
-      <div class="gallery-item reveal" data-cat="covers" style="transition-delay:0.2s">
-        <img src="Pictures/1087-Covers-Acrilyte-scaled.jpg" alt="Pergola with acrilyte" />
-        <div class="gallery-item-overlay"><span class="gallery-item-label">Pergola</span></div>
-      </div>
-
-      <div class="gallery-item reveal" data-cat="covers" style="transition-delay:0.25s">
-        <img src="Pictures/1102-Covers-Acrylite-1024x768.jpg" alt="Large acrylite cover" />
-        <div class="gallery-item-overlay"><span class="gallery-item-label">Acrylite Cover</span></div>
-      </div>
-
-      <div class="gallery-item reveal" data-cat="outdoor" style="transition-delay:0.3s">
-        <img src="Pictures/03ED3F51-3984-4713-BF89-9EC082B15147.webp" alt="Covered patio with outdoor seating" />
-        <div class="gallery-item-overlay"><span class="gallery-item-label">Covered Patio</span></div>
-      </div>
+      <!-- 12. Brick House Patio Roof — 2 Photos -->
+      <a href="project-brick-patio-roof.html" class="project-card reveal" style="transition-delay:0.26s">
+        <div class="project-card-img">
+          <img src="Pictures/Facebook/JBD_Photos/jbd_102.jpg" alt="Patio roof framing on brick house" />
+          <div class="project-card-img-overlay"></div>
+          <div class="project-card-count">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            2 Photos
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-tags">
+            <span class="project-tag">Patio Cover</span>
+            <span class="project-tag">Roof Extension</span>
+          </div>
+          <h3 class="project-card-title">Brick House Patio Roof Extension</h3>
+          <p class="project-card-desc">Patio roof extension on a single-story brick home — expanding the existing covered area into a full-width roofed patio with electrical rough-in.</p>
+          <span class="project-card-link">View Project →</span>
+        </div>
+      </a>
 
     </div>
 
     <!-- More photos note -->
-    <div style="margin-top:48px;text-align:center;padding:40px;background:var(--surface);border:1px solid var(--border);border-radius:14px;" class="reveal">
+    <div style="margin-top:56px;text-align:center;padding:40px;background:var(--bg);border:1px solid var(--border);border-radius:14px;" class="reveal">
       <p style="font-size:16px;font-weight:500;color:var(--dark);margin-bottom:8px;">Want to see more of our work?</p>
       <p style="font-size:14px;color:var(--muted);margin-bottom:20px;">Follow us on Facebook and Instagram for the latest project photos from the DFW area.</p>
       <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;">
@@ -176,25 +349,6 @@
   initProgressBar();
   initPageAnimations();
   initExtras();
-
-  // Gallery filter
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const items = document.querySelectorAll('.gallery-item');
-
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const filter = btn.dataset.filter;
-      items.forEach(item => {
-        if (filter === 'all' || item.dataset.cat === filter) {
-          item.classList.remove('hidden');
-        } else {
-          item.classList.add('hidden');
-        }
-      });
-    });
-  });
 </script>
 </body>
 </html>

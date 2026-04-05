@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ELDTJ7F364"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ELDTJ7F364');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brick House Patio Roof — JBD Improvements LLC | DFW Texas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<!-- HERO -->
+<div class="project-detail-hero">
+  <img src="Pictures/Facebook/JBD_Photos/jbd_102.jpg" alt="Patio roof framing on brick house" />
+  <div class="project-detail-hero-overlay"></div>
+  <div class="project-detail-hero-content">
+    <a href="projects.html" class="project-detail-back">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 12H5m0 0l7 7m-7-7l7-7"/></svg>
+      Back to Projects
+    </a>
+    <h1 class="project-detail-h1">Brick House<br/>Patio Roof Extension</h1>
+    <div class="project-detail-tags">
+      <span class="project-detail-tag">Patio Cover</span>
+      <span class="project-detail-tag">Roof Extension</span>
+    </div>
+  </div>
+</div>
+
+<!-- INFO -->
+<div class="project-detail-info reveal">
+  <p class="project-detail-desc">A patio roof extension on a single-story brick home — expanding the existing small covered area into a full-width roofed patio. Shown from the original back porch through the framing stage with rafters and electrical rough-in.</p>
+</div>
+
+<!-- GALLERY -->
+<div class="project-gallery-grid">
+  <div class="project-gallery-item featured reveal">
+    <img src="Pictures/Facebook/JBD_Photos/jbd_102.jpg" alt="Framing — rafters and electrical rough-in" />
+  </div>
+  <div class="project-gallery-item reveal" style="transition-delay:0.05s">
+    <img src="Pictures/Facebook/JBD_Photos/jbd_101.jpg" alt="Before — existing small covered patio on brick house" />
+  </div>
+</div>
+
+<!-- CTA -->
+<section class="cta-banner reveal">
+  <div class="cta-banner-inner">
+    <div>
+      <h2 class="section-title section-title-light" style="font-size:clamp(32px,4vw,54px);">Want Something Like This?</h2>
+      <p class="section-sub section-sub-light" style="margin-top:8px;">Let's build your dream outdoor space. Get a free estimate today.</p>
+    </div>
+    <a href="contact.html" class="btn-amber lg">Get a Free Estimate</a>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev">
+    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+  </button>
+  <img id="lightboxImg" src="" alt="" />
+  <button class="lightbox-nav lightbox-next" id="lightboxNext">
+    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+  </button>
+  <div class="lightbox-counter" id="lightboxCounter"></div>
+</div>
+
+<script src="components.js"></script>
+<script src="animations.js"></script>
+<script src="extras.js"></script>
+<script>
+  renderNav('projects');
+  renderFooter();
+  initReveal();
+  initProgressBar();
+  initPageAnimations();
+  initExtras();
+
+  const items = document.querySelectorAll('.project-gallery-item');
+  const lb = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lightboxImg');
+  const lbCounter = document.getElementById('lightboxCounter');
+  let current = 0;
+  const srcs = Array.from(items).map(i => i.querySelector('img').src);
+  function openLightbox(idx) { current = idx; lbImg.src = srcs[current]; lbCounter.textContent = (current+1)+' / '+srcs.length; lb.classList.add('active'); document.body.style.overflow = 'hidden'; }
+  function closeLightbox() { lb.classList.remove('active'); document.body.style.overflow = ''; }
+  items.forEach((item, i) => item.addEventListener('click', () => openLightbox(i)));
+  document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+  document.getElementById('lightboxPrev').addEventListener('click', () => { current = (current-1+srcs.length)%srcs.length; lbImg.src = srcs[current]; lbCounter.textContent = (current+1)+' / '+srcs.length; });
+  document.getElementById('lightboxNext').addEventListener('click', () => { current = (current+1)%srcs.length; lbImg.src = srcs[current]; lbCounter.textContent = (current+1)+' / '+srcs.length; });
+  lb.addEventListener('click', (e) => { if (e.target === lb) closeLightbox(); });
+  document.addEventListener('keydown', (e) => { if (!lb.classList.contains('active')) return; if (e.key==='Escape') closeLightbox(); if (e.key==='ArrowLeft') document.getElementById('lightboxPrev').click(); if (e.key==='ArrowRight') document.getElementById('lightboxNext').click(); });
+</script>
+</body>
+</html>
