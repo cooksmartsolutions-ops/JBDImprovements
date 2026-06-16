@@ -234,7 +234,6 @@ function initTestimonials() {
     { name: 'Ashley Jay', loc: 'DFW, TX', text: 'Great to work with and his team did an incredible job!', avatar: 'Reviews/AshleyJay.jpg', verified: true },
     { name: 'Kathleen Russell', loc: 'DFW, TX', text: 'Wonderful job on our pergola! Courteous, professional and fair pricing. Thanks for a great job on our project!', avatar: 'Reviews/KathleenRussell.jpg', verified: true },
     { name: 'Michael R.', loc: 'Fort Worth, TX', text: 'JBD built us a complete outdoor kitchen and patio cover. The craftsmanship is incredible — everything is solid and exactly what we envisioned. Highly recommend!', avatar: 'https://i.pravatar.cc/80?img=11' },
-    { name: 'James W.', loc: 'Keller, TX', text: 'They handled our roof insurance claim from start to finish. We barely had to lift a finger and ended up with a brand new roof. Couldn\'t be happier.', avatar: 'https://i.pravatar.cc/80?img=53' },
     { name: 'Carlos M.', loc: 'Grapevine, TX', text: 'The stamped concrete they laid in our backyard looks absolutely stunning. Great price, great work, done ahead of schedule. Will definitely use them again.', avatar: 'https://i.pravatar.cc/80?img=68' },
   ];
 
